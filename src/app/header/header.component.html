@@ -1,0 +1,33 @@
+<!-- <p>header works!</p>-->
+<div class="header">
+    <h1>{{title}}</h1>
+    <!-- <p>A <b>responsive</b> website created by me.</p> -->
+
+    <p [ngStyle]="{'color': 'yellow', 'font-size': '24px', 'font-weight': 'bold'}">{{paragraph}}</p>
+</div>
+
+
+<!-- <ng-container *ngFor="let links of nav">
+    <div class="navbar">
+       {{links}}
+    </div> <br>
+</ng-container> -->
+<!-- <div class="navbar">
+    <a href="/" class="active" *ngFor='let me of menu' >{{me}}</a>
+</div> -->
+ <!-- <ng-container *ngFor="let img of collectionofimg">
+    <div class="fakeimg" style="height:60px;">{{img}}</div><br>
+</ng-container>  -->
+<div class="navbar">
+
+    <a href="/" class="active" *ngFor="let me of menu1 ">{{me}}</a>
+
+    <a href="/" *ngFor="let me of menu ">{{me}}</a>
+
+  </div>
+  <Br/>
+  <Br/>
+  <div>
+  <br><input type="text" value="" placeholder="user-name">
+  </div>
+  <br/>

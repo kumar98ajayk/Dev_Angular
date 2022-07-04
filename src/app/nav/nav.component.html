@@ -1,0 +1,29 @@
+<!-- <p>nav works!</p> -->
+<h2  [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{about}}</h2>
+<h5  [ngStyle]="{'color': 'green', 'font-size': '24px', 'font-weight': 'bold'}">{{photos}}</h5>
+
+<ng-container *ngFor="let fBox of firstImgBox">
+    <div class="fakeimg" style="height:200px;">{{fBox+' ' +' Using *ngFor'}}</div><br>
+</ng-container>
+<!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+<!-- <p>Some text about me in culpa qui officia deserunt mollit anim..</p> -->
+<p>{{pr}}</p>
+<h3 *ngIf="isMoreText==10" [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{more+" "+1+' '+" using *ngIf"}}</h3>
+<h3 *ngIf="isMoreText>9" [ngStyle]="{'color': 'green', 'font-size': '24px', 'font-weight': 'bold'}">{{more+" "+2+' '+"using *ngIf"}}</h3>
+<p>{{lorem}}</p>
+<hr>
+
+<ng-container [ngSwitch]="discValue">
+    <p *ngSwitchCase="1"  [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{lorem+".value 1 using switch case"}}</p>
+    <p *ngSwitchCase="2"  [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{lorem+".value 2 using switch case"}}</p>
+    <p *ngSwitchCase="3"  [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{lorem+".value 3 using switch case"}}</p>
+    <p *ngSwitchCase="4"  [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{lorem+".value 4 using switch case"}}</p>
+    <p *ngSwitchCase="5" [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{lorem+".value 5 using switch case"}}</p>
+</ng-container>
+
+<!-- <div class="fakeimg" style="height:60px;">Image</div><br>
+<div class="fakeimg" style="height:60px;">Image</div><br> -->
+
+<ng-container *ngFor="let img of collectionofimg">
+    <div class="fakeimg" style="height:60px;">{{img}}</div><br>
+</ng-container>

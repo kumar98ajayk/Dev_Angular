@@ -1,0 +1,34 @@
+<!-- <app-nav></app-nav> -->
+<!-- <p>home works!</p> -->
+
+<div class="row">
+    <div class="side">
+        <app-nav></app-nav>
+    </div>
+    <div class="main">
+        <h2 [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{tHome}}</h2>
+        <h5 [ngStyle]="{'color': 'red', 'font-weight': 'bold'}">{{startSince}}</h5>
+
+
+        <ng-container *ngFor="let simage of firstImg">
+            <div class="fakeimg" style="height:200px;">{{simage}}</div><br>
+        </ng-container>        
+        <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+        <p [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold'}">{{sText}}</p>
+        <p [ngStyle]="{'color': 'green', 'font-size': '24px'}">{{para}}</p>
+        <br>
+        <h2>{{secondHeading}}</h2>
+        <h5  [ngStyle]="{'color': 'green', 'font-size': '24px'}">{{titleDesc}}</h5>
+
+<ng-container *ngFor="let simage of firstImg">
+    <div class="fakeimg" style="height:200px;">{{simage}}</div><br>
+</ng-container>
+
+        <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+        <p [ngStyle]="{'color': 'red', 'font-weight': 'bold'}">{{sText}}.</p>
+        <p>{{para}}</p>
+        <button (click)="counter('sub')">--</button>
+        <p>count:{{count}}</p>
+        <button (click)="counter('add')">++</button>
+    </div>
+</div>
